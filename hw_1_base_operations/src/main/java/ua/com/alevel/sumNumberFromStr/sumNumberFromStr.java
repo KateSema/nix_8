@@ -12,13 +12,15 @@ public class sumNumberFromStr {
     public void run(BufferedReader reader) throws IOException {
         System.out.println("Введите строку: ");
         String str = reader.readLine();
-        String num = str.replaceAll("[^0-9]", "");
-        if (num.equals(""))
+        String numbers = str.replaceAll("[^0-9]", "");
+        if (numbers.equals(""))
             System.out.println("В данной строке нет цифр");
         else {
-            int value1 = Integer.parseInt(num);
-            int value3 = summa(value1);
-            System.out.println(value3);
+            char[] massNumbers = numbers.toCharArray();
+            int result = 0;
+            for (char number : massNumbers)
+                result += Integer.parseInt(String.valueOf(number));
+            System.out.println(result);
         }
     }
 }

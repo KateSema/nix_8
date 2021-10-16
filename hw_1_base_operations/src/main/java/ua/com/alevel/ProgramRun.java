@@ -12,9 +12,11 @@ public class ProgramRun {
     public static void run() {
         preview();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String event;
+        String event = "";
         try {
-            while ((event = reader.readLine()) != null) {
+            while (true) {
+                System.out.print("Введите действие: ");
+                event = reader.readLine();
                 switch (event) {
                     case "1": {
                         new sumNumberFromStr().run(reader);
@@ -40,11 +42,9 @@ public class ProgramRun {
     }
 
     private static void preview() {
-        System.out.println("if you need first task, please select 1");
-        System.out.println("if you need second task, please select 2");
-        System.out.println("if you need third task, please select 3");
-        System.out.println("if you need exit task, please select 0");
-        System.out.println("Select you event:");
-        System.out.println();
+        System.out.println("Если вам нужно задание 1 про сумму цифр в строке, то введите 1");
+        System.out.println("Если вам нужно задание 2 про подсчет символов в строке, то введите 2");
+        System.out.println("Если вам нужно задание 3 про время конца урока, то введите 3");
+        System.out.println("Если вы хотите выйти, нажмите 0");
     }
 }
