@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="nixHome1" />
+        <module name="hw_1_base_operations" />
       </profile>
     </annotationProcessing>
   </component>
