@@ -1,14 +1,15 @@
 package ua.com.alevel;
 
-import ua.com.alevel.sumNumberFromStr.sumNumberFromStr;
-import ua.com.alevel.countCharsFromStr.countCharsFromStr;
-import ua.com.alevel.endOfLesson.endOfLesson;
+import ua.com.alevel.sumNumberFromStr.SumNumberFromStr;
+import ua.com.alevel.countCharsFromStr.CountCharsFromStr;
+import ua.com.alevel.endOfLesson.EndOfLesson;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ProgramRun {
+
     public static void run() {
         preview();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -19,15 +20,15 @@ public class ProgramRun {
                 event = reader.readLine();
                 switch (event) {
                     case "1": {
-                        new sumNumberFromStr().run(reader);
+                        new SumNumberFromStr().run(reader);
                     }
                     break;
                     case "2": {
-                        new countCharsFromStr().run(reader);
+                        new CountCharsFromStr().run(reader);
                     }
                     break;
                     case "3": {
-                        new endOfLesson().run(reader);
+                        new EndOfLesson().run(reader);
                     }
                     break;
                     case "0": {

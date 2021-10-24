@@ -5,7 +5,8 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class endOfLesson {
+public class EndOfLesson {
+
     public void run(BufferedReader reader) throws IOException {
         System.out.print("Введите урок: ");
         try {

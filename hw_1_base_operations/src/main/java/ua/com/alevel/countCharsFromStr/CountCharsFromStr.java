@@ -1,11 +1,11 @@
 package ua.com.alevel.countCharsFromStr;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.*;
 
-public class countCharsFromStr {
+public class CountCharsFromStr {
+
     public void run(BufferedReader reader) throws IOException {
         System.out.print("Введите строку: ");
         String str = reader.readLine();
