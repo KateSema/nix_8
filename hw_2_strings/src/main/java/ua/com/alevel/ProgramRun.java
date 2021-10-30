@@ -1,9 +1,8 @@
 package ua.com.alevel;
 
-//import ua.com.alevel.sumNumberFromStr.sumNumberFromStr;
-//import ua.com.alevel.countCharsFromStr.countCharsFromStr;
-//import ua.com.alevel.endOfLesson.endOfLesson;
 import ua.com.alevel.simplerevers.SimpleRevers;
+import ua.com.alevel.reversesubstring.ReverseSubstring;
+import ua.com.alevel.reversebyindexes.ReverseByIndexes;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,14 +22,14 @@ public class ProgramRun {
                         new SimpleRevers().run(reader);
                     }
                     break;
-//                    case "2": {
-//                        //new countCharsFromStr().run(reader);
-//                    }
-//                    break;
-//                    case "3": {
-//                        //new endOfLesson().run(reader);
-//                    }
-//                    break;
+                    case "2": {
+                        new ReverseSubstring().run(reader);
+                    }
+                    break;
+                    case "3": {
+                        new ReverseByIndexes().run(reader);
+                    }
+                    break;
                     case "0": {
                         System.exit(0);
                     }
@@ -44,8 +43,8 @@ public class ProgramRun {
 
     private static void preview() {
         System.out.println("Если вам нужно задание 1 про обычный реверс строки, то введите 1");
-//        System.out.println("Если вам нужно задание 2 про подсчет символов в строке, то введите 2");
-//        System.out.println("Если вам нужно задание 3 про время конца урока, то введите 3");
+        System.out.println("Если вам нужно задание 2 про реверс подстроки, то введите 2");
+        System.out.println("Если вам нужно задание 3 про реверс по индексу, то введите 3");
         System.out.println("Если вы хотите выйти, нажмите 0");
     }
 }

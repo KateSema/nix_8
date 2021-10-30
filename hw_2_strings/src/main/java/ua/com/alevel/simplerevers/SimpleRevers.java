@@ -10,6 +10,6 @@ public class SimpleRevers {
         System.out.print("Введите строку: ");
         String str = reader.readLine();
         String reverseString = ReverseStringUtil.reverse(str);
-        System.out.println(reverseString);
+        System.out.println("Результат: " + reverseString);
     }
 }
