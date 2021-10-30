@@ -4,7 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class sumNumberFromStr {
+public class SumNumberFromStr {
+
     public static int summa(int n) {
         return (n < 1) ? n : n % 10 + summa(n / 10);
     }
