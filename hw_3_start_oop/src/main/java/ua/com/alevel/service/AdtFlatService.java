@@ -8,7 +8,6 @@ public class AdtFlatService {
 
     private final AdtFlatDao adtFlatDao = new AdtFlatDao();
 
-
     public void create(AdtFlat adtFlat) {
         adtFlatDao.create(adtFlat);
     }

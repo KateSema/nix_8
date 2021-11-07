@@ -1,7 +1,8 @@
 package ua.com.alevel.mass;
 
 public class Mass<T> {
-    private Object[] array = new Object[0];
+
+    private Object[] array = new Object[0]; // ну вот что это ??? на занятии же даже обсуждали это ... хотя бы default 10
     private int pointer = 0;
 
     public void add(T item) {
@@ -16,7 +17,6 @@ public class Mass<T> {
     public void remove(int index) {
         for (int i = index; i < pointer - 1; i++)
             array[i] = array[i + 1];
-        //array[pointer] = null;
         pointer--;
         resize(array.length - 1);
     }
